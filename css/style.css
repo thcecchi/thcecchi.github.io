@@ -236,9 +236,13 @@ header {
 
   #smlHeaderBlock {
     width: 100%;
-    margin-top: 20%; }
+    margin-top: 20%;
+    margin-bottom: 20%; }
     #smlHeaderBlock h2 {
       width: 100%; }
+
+  #smlHeader {
+    height: 92vh; }
 
   .headerName {
     padding-top: 5%; }
