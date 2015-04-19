@@ -1,18 +1,25 @@
 @import url(style3.css);
+body {
+  font-size: 100%; }
+
+p {
+  font-size: 1.5em; }
+
 .container-fluid {
   padding: 0;
   overflow-y: hidden;
-  border-bottom: 7px solid black;
   background: white;
   padding-bottom: 20%; }
   .container-fluid.top-layer {
     z-index: 999999;
     position: relative;
     box-shadow: 5px 5px 10px #888888;
-    padding-bottom: 10%; }
+    padding-bottom: 10%;
+    border-bottom: 7px solid black; }
   .container-fluid.bottom-layer {
     z-index: -999999;
-    background: white; }
+    background: white;
+    border: 0px; }
 
 .row {
   margin-left: 0px;
@@ -27,14 +34,14 @@
     cursor: pointer;
     text-align: center;
     display: block;
-    margin-top: 1.25%;
+    margin-top: 2.25%;
     font-size: 2em;
     color: #BA0C2F; }
   .main-nav .logo {
     cursor: pointer;
     text-align: center;
     color: #BA0C2F;
-    font-size: 2em; }
+    font-size: 3em; }
 
 .main-nav-scrolled {
   padding: 0;
@@ -47,22 +54,28 @@
 header {
   height: 86vh;
   border-bottom: 7px solid #000000;
-  background: #BA0C2F; }
+  background: #BA0C2F;
+  overflow-y: hidden; }
   header .headerBlock {
     width: 75%;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    border: 7px solid ghostwhite;
+    margin-top: 8%; }
+    header .headerBlock h1, header .headerBlock h2 {
+      padding-left: 3%; }
     header .headerBlock h1 {
       text-align: left;
       margin-top: 20%;
-      font-size: 5em;
+      font-size: 6em;
       color: ghostwhite; }
     header .headerBlock h2 {
       font-family: "Helvetica", sans-serif;
       font-weight: 100;
-      font-size: 3em;
+      font-size: 3.5em;
       width: 75%;
-      color: white; }
+      color: white;
+      padding-bottom: 1%; }
 
 .sectionTitle {
   text-align: center;
@@ -197,7 +210,8 @@ header {
   transition: all 0.3s;
   content: "\f003";
   font-family: FontAwesome;
-  color: #BA0C2F; }
+  color: #BA0C2F;
+  font-size: 2.5em; }
 
 .btn-5:active:before {
   color: #703b87; }
@@ -215,5 +229,22 @@ header {
 
 .btn-5a:hover:before {
   top: 0; }
+
+@media screen and (max-width: 850px) {
+  .container-fluid.top-layer {
+    margin-bottom: 20%; }
+
+  #smlHeaderBlock {
+    width: 100%;
+    margin-top: 20%; }
+    #smlHeaderBlock h2 {
+      width: 100%; }
+
+  .headerName {
+    padding-top: 5%; }
+
+  #smlNavUl {
+    width: 100%;
+    margin-left: 30%; } }
 
 /*# sourceMappingURL=style.css.map */

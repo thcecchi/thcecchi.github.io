@@ -2,10 +2,17 @@
 
 $red: #BA0C2F;
 
+body {
+  font-size: 100%;
+}
+
+p {
+  font-size: 1.5em;
+}
+
 .container-fluid {
   padding: 0;
   overflow-y: hidden;
-  border-bottom: 7px solid black;
   background: white;
   padding-bottom: 20%;
 
@@ -14,11 +21,13 @@ $red: #BA0C2F;
     position: relative;
     box-shadow: 5px 5px 10px #888888;
     padding-bottom: 10%;
+    border-bottom: 7px solid black;
   }
 
   &.bottom-layer {
     z-index: -999999;
     background: white;
+    border: 0px;
   }
 }
 
@@ -36,7 +45,7 @@ $red: #BA0C2F;
     cursor: pointer;
     text-align: center;
     display: block;
-    margin-top: 1.25%;
+    margin-top: 2.25%;
     font-size: 2em;
     color: $red;
   }
@@ -45,7 +54,7 @@ $red: #BA0C2F;
     cursor: pointer;
     text-align: center;
     color: $red;
-    font-size: 2em;
+    font-size: 3em;
   }
 }
 
@@ -62,29 +71,34 @@ header {
   height: 86vh;
   border-bottom: 7px solid #000000;
   background: $red;
+  overflow-y: hidden;
+
 
   .headerBlock {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+    border: 7px solid ghostwhite;
+    margin-top: 8%;
+
+    h1, h2 {
+      padding-left: 3%;
+    }
 
     h1 {
       text-align: left;
       margin-top: 20%;
-      font-size: 5em;
+      font-size: 6em;
       color: ghostwhite;
-      // -webkit-animation: type 4s steps(60, end);
-      // animation: type 4s steps(60, end);
     }
 
     h2 {
       font-family: "Helvetica", sans-serif;
       font-weight: 100;
-      font-size: 3em;
+      font-size: 3.5em;
       width: 75%;
       color: white;
-      // -webkit-animation: type2 8s steps(60, end);
-      // animation: type2 8s steps(60, end);
+      padding-bottom: 1%;
     }
   }
 }
@@ -136,11 +150,6 @@ header {
     }
 }
 
-
-// .hide {
-//   display: none;
-// }
-
 .invis {
   opacity: 0;
 }
@@ -167,6 +176,10 @@ header {
     width: 100%;
     // margin-top: 10%;
   }
+
+  // .headerName {
+  //   padding-top: 4%;
+  // }
 
 }
 
@@ -274,6 +287,7 @@ header {
     content: "\f003";
 	  font-family: FontAwesome;
     color: $red;
+    font-size: 2.5em;
   }
 
   .btn-5:active:before {
@@ -295,4 +309,35 @@ header {
 
   .btn-5a:hover:before {
   	top: 0;
+  }
+
+  // Additional responsive styles /////
+  ////////////////////////////////////
+
+  @media screen and (max-width: 850px) {
+
+    .container-fluid {
+
+      &.top-layer {
+        margin-bottom: 20%;
+      }
+    }
+
+      #smlHeaderBlock {
+        width: 100%;
+        margin-top: 20%;
+
+      h2 {
+        width: 100%;
+      }
+    }
+
+    .headerName {
+      padding-top: 5%;
+    }
+
+    #smlNavUl {
+      width: 100%;
+      margin-left: 30%;
+    }
   }
