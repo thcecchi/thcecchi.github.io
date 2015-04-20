@@ -1,5 +1,10 @@
 @import 'style3.css';
 
+@mixin centered() {
+  float: none;
+  margin: 0 auto;
+}
+
 $red: #BA0C2F;
 
 body {
@@ -164,7 +169,6 @@ header {
 
   h4 {
     opacity: 1;
-    // text-shadow: 1px 1px #dbdbdb;
   }
 
   h1 {
@@ -175,12 +179,7 @@ header {
 
   .aboutSignoff {
     width: 100%;
-    // margin-top: 10%;
   }
-
-  // .headerName {
-  //   padding-top: 4%;
-  // }
 
 }
 
@@ -224,9 +223,7 @@ header {
           color: $red;
         }
       }
-
     }
-
   }
 
   &:hover {
@@ -262,6 +259,7 @@ header {
 
   .btn-5 h1 {
   	display: inline-block;
+    font-size: 2.5em;
     margin: 0;
     padding-top: 3%;
     padding-bottom: 3%;
