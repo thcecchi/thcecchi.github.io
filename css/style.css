@@ -41,6 +41,7 @@ p {
     cursor: pointer;
     text-align: center;
     color: #BA0C2F;
+    font-weight: bold;
     font-size: 3em; }
 
 .main-nav-scrolled {
