@@ -125,6 +125,36 @@ header {
   h1 {
     text-align: center;
     margin-top: 20%;
+    display: inline-block;
+  }
+}
+
+.links {
+  list-style-type: none;
+  width: 50%;
+  padding-left: 5%;
+  // margin: 0;
+  display: inline-block;
+
+    li {
+      display: inline-block;
+      font-size: 3em;
+      margin-left: 7%;
+      margin-right: 7%;
+
+      a {
+        color: #333333;
+        text-decoration: none;
+
+        &:hover {
+          color: $red;
+        }
+      }
+    }
+
+
+  &:hover {
+
   }
 }
 
@@ -200,38 +230,6 @@ header {
   overflow-y: scroll;
 }
 
-.links {
-  position: absolute;
-  top: 40%;
-  left: 30%;
-  visibility: hidden;
-  width: 50%;
-
-  ul {
-    list-style-type: none;
-
-    li {
-      display: inline-block;
-      font-size: 6em;
-      margin-left: 5%;
-      margin-right: 5%;
-
-      a {
-        color: #333333;
-        text-decoration: none;
-
-        &:hover {
-          color: $red;
-        }
-      }
-    }
-  }
-
-  &:hover {
-    visibility: visible;
-  }
-}
-
 .contact {
   position: fixed;
   width: 100%;
@@ -278,7 +276,7 @@ header {
   	position: absolute;
   	height: 100%;
   	width: 100%;
-  	line-height: 2.5;
+  	line-height: 2;
   	font-size: 180%;
   	-webkit-transition: all 0.3s;
   	-moz-transition: all 0.3s;
@@ -318,7 +316,7 @@ header {
     .container-fluid {
 
       &.top-layer {
-        margin-bottom: 20%;
+        margin-bottom: 15%;
       }
     }
 
@@ -340,12 +338,11 @@ header {
       padding-top: 5%;
     }
 
-    #smlNavUl {
+  }
 
-    }
+  @media screen and (min-width: 768px) {
 
     #contactInfo {
-      // margin-top: 25%;
+      margin-top: 165px;
     }
-
   }

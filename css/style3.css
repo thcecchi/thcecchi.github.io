@@ -20,15 +20,13 @@
 #contactInfo li {
 	background: #fff;
 	display: inline-block;
-	padding-top: 2%;
-	padding-bottom: 2%;
+	padding-top: 1%;
+	padding-bottom: 1%;
 	text-align: center;
-	border-top: 2px solid #BA0C2F;
-	border-left: 2px solid #BA0C2F;
-	border-right: 2px solid #BA0C2F;
-	border-bottom: 2px solid #BA0C2F;
+	border: 2px solid #BA0C2F;
 	word-wrap: break-word;
 	cursor: pointer;
+	-webkit-transition: .5s;
 }
 
 #contactInfo li:hover {
@@ -48,6 +46,8 @@
 	display: inline;
 	font-size: 3em;
 	margin-right: 2%;
+	-webkit-transition: .3s;
+	transition: 0.3s;
 }
 
 #contactInfo li h2 {
@@ -55,6 +55,16 @@
 	display: inline;
 	font-weight: bold;
 	font-size: 2.5em;
+	-webkit-transition: .5s;
+}
+
+#phoneLink {
+	font-size: 1em;
+	display: inline;
+	color: #BA0C2F;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	cursor: pointer;
 }
 
 /* Overlay closing cross */
@@ -90,6 +100,7 @@
 	display: inline-block;
 	position: relative;
 	height: 70vh;
+	width: 100vw;
 }
 
 .overlay ul li {
