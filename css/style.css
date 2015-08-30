@@ -62,7 +62,7 @@ header {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-    border-left: 8px dashed #BA0C2F;
+    border-left: 11px dashed #BA0C2F;
     margin-top: 2%; }
     header .headerBlock h1, header .headerBlock h2 {
       padding-left: 8%; }
