@@ -13,6 +13,8 @@
 		support = { transitions : Modernizr.csstransitions };
 
 	function toggleOverlay() {
+		  $("#trigger-overlay").toggleClass( "fa-bars" )
+
 		if( classie.has( overlay, 'open' ) ) {
 			classie.remove( overlay, 'open' );
 			classie.add( overlay, 'close' );

@@ -19,19 +19,19 @@
 }
 
 #contactInfo li {
-	background: #fff;
+	background-color: rgba(0, 0, 0, 0.0);
 	display: inline-block;
 	padding-top: 1%;
 	padding-bottom: 1%;
 	text-align: center;
-	border: 2px solid #BA0C2F;
+	/*border: 2px solid #BA0C2F;*/
 	word-wrap: break-word;
 	cursor: pointer;
 	-webkit-transition: .5s;
 }
 
 #contactInfo li:hover {
-	background: #BA0C2F;
+	/*background: #BA0C2F;*/
 }
 
 #contactInfo li:hover > h2 {
@@ -42,8 +42,17 @@
 	color: #fff;
 }
 
+#contactInfo li:hover > a h2 {
+	color: #fff;
+}
+
+#contactInfo li:hover > a i {
+	color: #fff;
+}
+
+
 #contactInfo li i {
-	color: #BA0C2F;
+	color: #fff;
 	display: inline;
 	font-size: 3em;
 	margin-right: 2%;
@@ -52,19 +61,17 @@
 }
 
 #contactInfo li h2 {
-	color: #BA0C2F;
+	color: #006BB6;
 	display: inline;
 	font-weight: bold;
 	font-size: 2.5em;
 	-webkit-transition: .5s;
 }
 
-#phoneLink {
+#contactInfo a {
 	font-size: 1em;
 	display: inline;
-	color: #BA0C2F;
-	-webkit-transition: 0.3s;
-	transition: 0.3s;
+	color: #006BB6;
 	cursor: pointer;
 }
 
@@ -102,6 +109,7 @@
 	position: relative;
 	height: 70vh;
 	width: 100vw;
+	font-family: "Sanchez", sans-serif;
 }
 
 .overlay ul li {
@@ -119,14 +127,14 @@
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
 	cursor: pointer;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	text-align: center;
 }
 
 .overlay ul li a:hover,
 .overlay ul li a:focus {
 	text-decoration: none;
-	color: #BA0C2F;
+	color: #006BB6;
 }
 
 /* Effects */
