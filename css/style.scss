@@ -189,6 +189,30 @@ header {
   transition: width 2s, transform 2s;
 }
 
+.icon-row {
+  padding-top: 5%;
+
+  .tech-icon {
+    filter: none;
+    -webkit-filter: grayscale(30%);
+    -moz-filter:    grayscale(30%);
+    -ms-filter:     grayscale(30%);
+    -o-filter:      grayscale(30%);
+    position: relative;
+    float: left;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size: cover;
+    border: none;
+
+    &.logo-type {
+      padding-top: 5%;
+    }
+  }
+}
+
 .description {
     display: inline-block;
 
@@ -231,6 +255,10 @@ header {
   font-family: "Sanchez", serif;
   text-shadow: none;
   margin-top: 7%;
+}
+
+.skillsTop {
+  padding-bottom: -10%;
 }
 
 .parallax {

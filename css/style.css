@@ -130,6 +130,25 @@ header {
   -o-transform: width 2s, -o-transform 2s;
   transition: width 2s, transform 2s; }
 
+.icon-row {
+  padding-top: 5%; }
+  .icon-row .tech-icon {
+    filter: none;
+    -webkit-filter: grayscale(30%);
+    -moz-filter: grayscale(30%);
+    -ms-filter: grayscale(30%);
+    -o-filter: grayscale(30%);
+    position: relative;
+    float: left;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none; }
+    .icon-row .tech-icon.logo-type {
+      padding-top: 5%; }
+
 .description {
   display: inline-block; }
   .description h1 {
@@ -160,6 +179,9 @@ header {
   font-family: "Sanchez", serif;
   text-shadow: none;
   margin-top: 7%; }
+
+.skillsTop {
+  padding-bottom: -10%; }
 
 .parallax {
   position: fixed;
