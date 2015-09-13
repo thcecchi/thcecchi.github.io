@@ -63,32 +63,41 @@ p {
     text-align: center; }
 
 header {
-  height: 70vh;
+  height: 80vh;
   overflow-y: hidden; }
-  header .header-contact h6 {
+  header .header-contact h3, header .header-contact h4 {
+    margin-top: -5%;
+    color: #BA0C2F;
+    padding-top: 5%;
     text-align: left;
-    line-height: 1.75em;
-    font-family: "Domine", serif; }
+    line-height: 1.25em;
+    font-family: "Cutive Mono", serif;
+    filter: none;
+    -webkit-filter: saturate(95%);
+    -moz-filter: saturate(95%);
+    -ms-filter: saturate(95%);
+    -o-filter: saturate(95%); }
   header .headerBlock {
-    width: 60%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
-    border-left: 11px dashed #BA0C2F;
     margin-top: 2%; }
-    header .headerBlock h1, header .headerBlock h2 {
-      padding-left: 8%; }
     header .headerBlock h1 {
       font-family: "Sanchez", serif;
-      margin-top: 20%;
-      font-size: 6em;
-      color: #006BB6; }
+      text-align: center;
+      margin-top: 10%;
+      font-size: 12em;
+      color: #BA0C2F; }
     header .headerBlock h2 {
       font-family: "Domine", serif;
-      font-weight: 100;
-      font-size: 3.5em;
-      width: 100%;
-      color: #006BB6;
-      padding-bottom: 1%; }
+      font-size: 2.5em;
+      width: 50%;
+      color: #BA0C2F;
+      padding-bottom: 1%;
+      display: block;
+      margin-left: 45%;
+      margin-right: auto;
+      text-align: right; }
 
 .sectionTitle {
   text-align: center;
@@ -278,14 +287,25 @@ header {
     width: 100%;
     margin-top: 5%;
     margin-bottom: 20%; }
+    #smlHeaderBlock h1 {
+      padding-left: 1%;
+      padding-right: 1%;
+      font-size: 5em; }
     #smlHeaderBlock h2 {
-      width: 100%; }
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 2em;
+      text-align: center; }
 
   #smlHeader {
-    height: 75vh; }
+    height: 40vh; }
 
   .headerName {
-    padding-top: 5%; } }
+    padding-top: 5%; }
+
+  .tech-icon {
+    width: 30%; } }
 @media screen and (min-width: 768px) {
   #contactInfo {
     margin-top: 165px; } }

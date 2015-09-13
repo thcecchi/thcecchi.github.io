@@ -48,6 +48,7 @@ p {
   z-index: 150;
   position: relative;
   background-color: rgba(0, 0, 0, 0.0);
+  // background-color: #FF8484;
 
   .menuBars {
     width: 100%;
@@ -91,47 +92,59 @@ p {
 }
 
 header {
-  height: 70vh;
+  height: 80vh;
+  // background-color: #FF8484;
   // border-bottom: 3px dashed $red;
   overflow-y: hidden;
 
   .header-contact {
-
-    h6 {
+    h3, h4 {
+      margin-top: -5%;
+      color: $red;
+      padding-top: 5%;
       text-align: left;
-      line-height: 1.75em;
-      font-family: "Domine", serif;
+      line-height: 1.25em;
+      font-family: "Cutive Mono", serif;
+
+      filter: none;
+      -webkit-filter: saturate(95%);
+      -moz-filter:    saturate(95%);
+      -ms-filter:     saturate(95%);
+      -o-filter:      saturate(95%);
     }
   }
 
 
   .headerBlock {
-    width: 60%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
-    border-left: 11px dashed $red;
+    // border-left: 11px dashed $red;
     margin-top: 2%;
 
     h1, h2 {
-      padding-left: 8%;
+      // padding-left: 8%;
       // margin-left: -100px;
     }
 
     h1 {
       font-family: "Sanchez", serif;
-      // text-align: left;
-      margin-top: 20%;
-      font-size: 6em;
-      color: $blue;
+      text-align: center;
+      margin-top: 10%;
+      font-size: 12em;
+      color: $red;
     }
 
     h2 {
       font-family: "Domine", serif;
-      font-weight: 100;
-      font-size: 3.5em;
-      width: 100%;
-      color: $blue;
+      font-size: 2.5em;
+      width: 50%;
+      color: $red;
       padding-bottom: 1%;
+      display: block;
+      margin-left: 45%;
+      margin-right: auto;
+      text-align: right;
     }
   }
 }
@@ -384,17 +397,31 @@ header {
         margin-top: 5%;
         margin-bottom: 20%;
 
+      h1 {
+        padding-left: 1%;
+        padding-right: 1%;
+        font-size: 5em;
+      }
+
       h2 {
-        width: 100%;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 2em;
+        text-align: center;
       }
     }
 
     #smlHeader {
-      height: 75vh;
+      height: 40vh;
     }
 
     .headerName {
       padding-top: 5%;
+    }
+
+    .tech-icon {
+      width: 30%;
     }
 
   }
