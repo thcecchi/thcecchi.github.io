@@ -53,12 +53,12 @@ p {
   margin-left: 1%;
   top: 0; }
   .main-nav-scrolled:hover {
-    animation: menubounce 1.25s ease-out;
-    -webkit-animation: menubounce 1.25s ease-out;
+    animation: menubounce .8s ease-out;
+    -webkit-animation: menubounce .8s ease-out;
     /* Safari 4+ */
-    -moz-animation: menubounce 1.25s ease-out;
+    -moz-animation: menubounce .8s ease-out;
     /* Fx 5+ */
-    -o-animation: menubounce 1.25s ease-out; }
+    -o-animation: menubounce .8s ease-out; }
   .main-nav-scrolled .menuBars {
     text-align: center; }
 
@@ -91,13 +91,12 @@ header {
     header .headerBlock h2 {
       font-family: "Domine", serif;
       font-size: 2.5em;
-      width: 50%;
-      color: #BA0C2F;
+      text-align: center;
+      color: #333;
+      padding-top: 3%;
       padding-bottom: 1%;
       display: block;
-      margin-left: 45%;
-      margin-right: auto;
-      text-align: right; }
+      margin-right: auto; }
 
 .sectionTitle {
   text-align: center;
