@@ -212,6 +212,22 @@ header {
   overflow-x: hidden;
   overflow-y: scroll; }
 
+#social-icons {
+  display: block;
+  padding-top: 4%; }
+  #social-icons .social-icon {
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    transition: transform .5s ease-out; }
+    #social-icons .social-icon a {
+      color: #333;
+      transition: color .2s ease-out; }
+    #social-icons .social-icon:hover {
+      transform: translateY(-10%); }
+    #social-icons .social-icon:hover > a {
+      color: #006BB6; }
+
 .contact {
   position: fixed;
   width: 100%;
@@ -230,7 +246,8 @@ header {
   overflow: hidden;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
-  backface-visibility: hidden; }
+  backface-visibility: hidden;
+  display: block; }
 
 .btn-5 h1 {
   display: inline-block;

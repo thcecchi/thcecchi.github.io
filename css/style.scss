@@ -300,6 +300,31 @@ header {
   overflow-y: scroll;
 }
 
+#social-icons {
+  display: block;
+  padding-top: 4%;
+
+  .social-icon {
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    transition: transform .5s ease-out;
+
+    a {
+      color: #333;
+      transition: color .2s ease-out;
+    }
+
+    &:hover {
+      transform: translateY(-10%);
+    }
+
+    &:hover > a {
+      color: $blue;
+    }
+  }
+}
+
 .contact {
   position: fixed;
   width: 100%;
@@ -325,6 +350,7 @@ header {
   	-webkit-backface-visibility: hidden;
   	-moz-backface-visibility: hidden;
   	backface-visibility: hidden;
+    display: block;
   }
 
   .btn-5 h1 {
