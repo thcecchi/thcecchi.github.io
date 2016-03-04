@@ -43,7 +43,8 @@ p {
     text-align: center;
     color: #006BB6;
     font-weight: bold;
-    font-size: 3em; }
+    font-size: 3em;
+    letter-spacing: 1px; }
 
 .main-nav-scrolled {
   padding: 0;
@@ -92,6 +93,7 @@ header {
       font-family: "Domine", serif;
       font-size: 2.5em;
       text-align: center;
+      letter-spacing: 1px;
       color: #333;
       padding-top: 3%;
       padding-bottom: 1%;
@@ -173,6 +175,8 @@ header {
   .description h1 {
     text-align: left;
     color: #BA0C2F; }
+  .description p {
+    letter-spacing: .25px; }
 
 .invis {
   opacity: 0; }
@@ -185,14 +189,18 @@ header {
   .about .headerName {
     font-family: "Sanchez", serif;
     opacity: 1;
-    color: #006BB6; }
+    color: #006BB6;
+    letter-spacing: .75px; }
   .about .body {
     font-family: "Domine", serif;
-    line-height: 1.75em; }
+    line-height: 1.75em;
+    letter-spacing: .25px; }
   .about .aboutSignoff {
     color: #006BB6;
     font-family: "Sanchez", serif;
-    width: 100%; }
+    width: 100%;
+    letter-spacing: .25px;
+    line-height: 1.5em; }
 
 .sectionTitle {
   font-family: "Sanchez", serif;
@@ -219,7 +227,7 @@ header {
     display: inline-block;
     text-align: center;
     font-size: 30px;
-    transition: transform .5s ease-out; }
+    transition: transform .2s ease-out; }
     #social-icons .social-icon a {
       color: #333;
       transition: color .2s ease-out; }

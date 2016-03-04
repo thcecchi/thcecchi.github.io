@@ -66,6 +66,7 @@
 	font-weight: bold;
 	font-size: 2.5em;
 	-webkit-transition: .5s;
+	letter-spacing: 2px;
 }
 
 #contactInfo a {
@@ -73,6 +74,7 @@
 	display: inline;
 	color: #006BB6;
 	cursor: pointer;
+	letter-spacing: 2px;
 }
 
 /* Overlay closing cross */
@@ -129,6 +131,7 @@
 	cursor: pointer;
 	/*font-weight: bold;*/
 	text-align: center;
+	letter-spacing: 5px;
 }
 
 .overlay ul li a:hover,
